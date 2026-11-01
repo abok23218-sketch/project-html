@@ -2,6 +2,20 @@
 
 internal class Program
 {
+    static void CalcSum(List<int> list)
+    {
+        int sum = 0;
+        for (int i = 0; i < list.Count; i++)
+        {
+            sum += list[i];
+
+        }
+        Console.WriteLine($"sum = {sum}");
+
+        
+
+
+                }
     static void ReadInput(List<int> list/*, int specifiedIndex = 0*/)
     {
         Console.WriteLine("Enter an integer to add to the list: ");
@@ -24,6 +38,11 @@ internal class Program
         }
         Console.WriteLine("]");
     }
+    void sum(List<int> list) {
+        int sum = 0;
+        for (int i = 0; i < list.Count; i++)
+            sum += list[i];
+        Console.WriteLine($"sum = {sum}"); }
 
     static void Main(string[] args)
     {
@@ -69,6 +88,8 @@ internal class Program
                     {
                         // TODO
                         //CalcSum(); // 60
+                        CalcSum(list);
+                        
                     }
                     break;
                 case 4:
